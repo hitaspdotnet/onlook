@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import { sendAnalytics } from '@onlook/analytics/react';
 import { MainChannels } from '@onlook/constants';
 import type { Project } from '@onlook/models/projects';
@@ -33,7 +33,7 @@ export class ProjectsManager {
 
     createProject(name: string, url: string, folderPath: string): Project {
         const newProject: Project = {
-            id: nanoid(),
+            id: ulid(),
             name,
             url,
             folderPath,

@@ -1,0 +1,38 @@
+{
+  "name": "@onlook/analytics",
+  "description": "Onlook analytics",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onlook-dev/onlook.git"
+  },
+  "main": "src/index.ts",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "lint": "eslint --fix .",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["onlook", "analytics"],
+  "author": {
+    "name": "Onlook",
+    "email": "contact@onlook.dev"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://onlook.dev",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "dependencies": {
+    "mixpanel": "^0.18.0",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "@onlook/typescript": "*",
+    "electron": "32.1.0",
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,10 +1,4 @@
-import { MainChannels } from '@onlook/models/constants';
-
 export const platformSlash = window.env.PLATFORM === 'win32' ? '\\' : '/';
-
-export function sendAnalytics(event: string, data?: Record<string, any>) {
-    window.api.send(MainChannels.SEND_ANALYTICS, { event, data });
-}
 
 export const isMetaKey = (e: Pick<KeyboardEvent, 'ctrlKey' | 'metaKey'>) =>
     process.platform === 'darwin' ? e.metaKey : e.ctrlKey;

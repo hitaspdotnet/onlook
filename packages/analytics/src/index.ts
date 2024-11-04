@@ -1,13 +1,8 @@
-import { app, ipcMain } from 'electron';
-import * as Mixpanel from 'mixpanel';
-import { nanoid } from 'nanoid';
+import { app } from 'electron';
+import Mixpanel from 'mixpanel';
+import { ulid } from '@onlook/utility/ulid';
 import { PersistentStorage } from '../storage';
-import { MainChannels } from '@onlook/models/constants';
 import type { UserMetadata } from '@onlook/models/settings';
-
-export function sendAnalytics(event: string, data?: Record<string, any>) {
-    ipcMain.emit(MainChannels.SEND_ANALYTICS, '', { event, data });
-}
 
 class Analytics {
     private static instance: Analytics;
@@ -30,7 +25,7 @@ class Analytics {
         const enable = settings.enableAnalytics !== undefined ? settings.enableAnalytics : true;
         this.id = settings.id;
         if (!this.id) {
-            this.id = nanoid();
+            this.id = ulid();
             PersistentStorage.USER_SETTINGS.update({ enableAnalytics: enable, id: this.id });
         }
 

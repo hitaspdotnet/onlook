@@ -2,7 +2,7 @@
 // Author: Anton Medvedev <anton@medv.io>
 // Source: https://github.com/antonmedv/finder
 
-import { generate, parse } from '../electron/preload/webview/bundles/csstree.esm.js';
+import { generate, parse } from 'css-tree';
 
 type Knot = {
     name: string;

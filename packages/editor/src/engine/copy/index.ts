@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import type { EditorEngine } from '..';
 import { EditorAttributes, MainChannels } from '@onlook/constants';
 import { escapeSelector } from '../../helpers';
@@ -91,7 +91,7 @@ export class CopyManager {
     }
 
     getCleanedCopyEl(copiedEl: ActionElement): ActionElement {
-        const uuid = nanoid();
+        const uuid = ulid();
         const cleanedAttributes = copiedEl.attributes;
         cleanedAttributes[EditorAttributes.DATA_ONLOOK_UNIQUE_ID] = uuid;
         cleanedAttributes[EditorAttributes.DATA_ONLOOK_INSERTED] = 'true';

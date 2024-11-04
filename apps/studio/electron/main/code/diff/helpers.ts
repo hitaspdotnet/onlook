@@ -1,5 +1,5 @@
 import * as t from '@babel/types';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import { EditorAttributes } from '@onlook/constants';
 import type { CodeDiffRequest } from '@onlook/models/code';
 import type { TemplateNode } from '@onlook/models/element';
@@ -26,7 +26,7 @@ export function addKeyToElement(element: t.JSXElement | t.JSXFragment): void {
                 (attr) => t.isJSXAttribute(attr) && attr.name.name === 'key',
             ) !== -1;
         if (!keyExists) {
-            const keyValue = EditorAttributes.ONLOOK_MOVE_KEY_PREFIX + nanoid();
+            const keyValue = EditorAttributes.ONLOOK_MOVE_KEY_PREFIX + ulid();
             const keyAttribute = t.jsxAttribute(t.jsxIdentifier('key'), t.stringLiteral(keyValue));
             element.openingElement.attributes.push(keyAttribute);
         }

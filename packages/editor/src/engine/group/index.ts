@@ -1,5 +1,5 @@
 import type { WebviewTag } from 'electron';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import type { EditorEngine } from '..';
 import { EditorAttributes } from '@onlook/constants';
 import { escapeSelector } from '../../helpers';
@@ -200,7 +200,7 @@ export class GroupManager {
             gap: parentDomEl.styles.gap,
         };
 
-        const uuid = nanoid();
+        const uuid = ulid();
         const selector = `[${EditorAttributes.DATA_ONLOOK_UNIQUE_ID}="${uuid}"]`;
         const container: ActionElement = {
             selector,

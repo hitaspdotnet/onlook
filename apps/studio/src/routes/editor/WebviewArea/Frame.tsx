@@ -1,5 +1,5 @@
 import { useEditorEngine, useProjectsManager } from '@/components/Context';
-import type { WebviewMessageBridge } from '@/lib/editor/messageBridge';
+import type { WebviewMessageBridge } from '@onlook/editor/messageBridge';
 import type { SizePreset } from '@/lib/sizePresets';
 import { getRunProjectCommand } from '@/lib/utils';
 import { Links } from '@onlook/constants';

@@ -1,6 +1,6 @@
 import { platformSlash } from '@/lib/utils';
 import { MainChannels } from '@onlook/constants';
-import { capitalizeFirstLetter } from '@onlook/editor/helpers';
+import { capitalizeFirstLetter } from '@onlook/utility/string';
 
 export enum CreateMethod {
     LOAD = 'load',

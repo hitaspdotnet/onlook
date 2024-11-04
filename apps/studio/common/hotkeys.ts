@@ -1,4 +1,4 @@
-import { capitalizeFirstLetter } from './helpers';
+import { capitalizeFirstLetter } from '@onlook/utility/string';
 
 export class Hotkey {
     // Modes

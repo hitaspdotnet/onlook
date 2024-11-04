@@ -28,8 +28,7 @@
   },
   "dependencies": {
     "@onlook/constants": "*",
-    "mixpanel": "^0.18.0",
-    "nanoid": "^5.0.7"
+    "mixpanel": "^0.18.0"
   },
   "devDependencies": {
     "@onlook/typescript": "*",

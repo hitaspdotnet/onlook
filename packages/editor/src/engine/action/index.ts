@@ -1,4 +1,4 @@
-import { sendAnalytics } from '@/lib/utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import type { EditorEngine } from '..';
 import { WebviewChannels } from '@onlook/constants';
 import { assertNever } from '@onlook/utility/assert';

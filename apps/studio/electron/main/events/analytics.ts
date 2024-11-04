@@ -1,5 +1,5 @@
 import { ipcMain } from 'electron';
-import analytics from '../analytics';
+import analytics from '@onlook/analytics';
 import { MainChannels } from '@onlook/constants';
 
 export function listenForAnalyticsMessages() {

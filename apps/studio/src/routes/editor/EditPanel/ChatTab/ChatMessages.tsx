@@ -1,12 +1,12 @@
 import { useEditorEngine } from '@/components/Context';
-import type { AssistantChatMessageImpl } from '@/lib/editor/engine/chat/message/assistant';
-import type { UserChatMessageImpl } from '@/lib/editor/engine/chat/message/user';
+import type { AssistantChatMessageImpl } from '@onlook/editor/engine/chat/message/assistant';
+import type { UserChatMessageImpl } from '@onlook/editor/engine/chat/message/user';
 import { getTruncatedFileName } from '@/lib/utils';
 import type { ChatMessageContext } from '@onlook/models/chat';
 import { ChatMessageType } from '@onlook/models/chat';
 import { Icons } from '@onlook/ui/icons';
 import { observer } from 'mobx-react-lite';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import React, { useEffect, useRef } from 'react';
 import CodeChangeDisplay from './CodeChangeDisplay';
 
@@ -44,7 +44,7 @@ const ChatMessages = observer(() => {
                         if (content.type === 'text') {
                             return <p key={content.text}>{content.text}</p>;
                         } else if (content.type === 'code') {
-                            return <CodeChangeDisplay key={nanoid()} content={content} />;
+                            return <CodeChangeDisplay key={ulid()} content={content} />;
                         }
                     })}
                 </div>

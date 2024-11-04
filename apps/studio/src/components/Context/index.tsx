@@ -1,8 +1,8 @@
-import { AuthManager } from '@/lib/auth';
-import { EditorEngine } from '@/lib/editor/engine';
-import { ProjectsManager } from '@/lib/projects';
-import { RouteManager } from '@/lib/routes';
-import { UpdateManager } from '@/lib/update';
+import { AuthManager } from '@onlook/services/auth';
+import { EditorEngine } from '@onlook/editor/engine';
+import { ProjectsManager } from '@onlook/services/projects';
+import { RouteManager } from '@onlook/services/routes';
+import { UpdateManager } from '@onlook/services/update';
 import { createContext, useContext } from 'react';
 
 const authManager = new AuthManager();

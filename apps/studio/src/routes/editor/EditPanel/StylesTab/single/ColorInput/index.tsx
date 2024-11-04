@@ -1,5 +1,5 @@
 import { useEditorEngine } from '@/components/Context';
-import type { SingleStyle } from '@/lib/editor/styles/models';
+import type { SingleStyle } from '@onlook/editor/styles/models';
 import { Icons } from '@onlook/ui/icons';
 import { Color, isColorEmpty } from '@onlook/utility/color';
 import { observer } from 'mobx-react-lite';

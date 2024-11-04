@@ -9,7 +9,7 @@ import type {
 } from '@onlook/models/actions';
 import { EditorAttributes } from '@onlook/constants';
 import type { DropElementProperties, ElementPosition } from '@onlook/models/element';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import type React from 'react';
 import type { EditorEngine } from '..';
 
@@ -152,7 +152,7 @@ export class InsertManager {
             return;
         }
         const mode = this.editorEngine.mode;
-        const uuid = nanoid();
+        const uuid = ulid();
         const selector = `[${EditorAttributes.DATA_ONLOOK_UNIQUE_ID}="${uuid}"]`;
         const width = Math.max(Math.round(newRect.width), 30);
         const height = Math.max(Math.round(newRect.height), 30);
@@ -212,7 +212,7 @@ export class InsertManager {
             return;
         }
 
-        const uuid = nanoid();
+        const uuid = ulid();
         const selector = `[${EditorAttributes.DATA_ONLOOK_UNIQUE_ID}="${uuid}"]`;
 
         const element: ActionElement = {

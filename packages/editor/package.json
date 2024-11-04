@@ -22,14 +22,44 @@
   "license": "Apache-2.0",
   "homepage": "https://onlook.dev",
   "exports": {
-    "./*": "./src/*/index.ts"
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts",
+    "./helpers*": "./src/helpers/index.ts",
+    "./engine": "./src/engine/index.ts",
+    "./engine/*": "./src/engine/*/index.ts",
+    "./engine/ast/map": "./src/engine/ast/map.ts",
+    "./engine/chat/*": "./src/engine/chat/*.ts",
+    "./engine/chat/message/*": "./src/engine/chat/message/*.ts",
+    "./engine/code/*": "./src/engine/code/*.ts",
+    "./engine/overlay/*": "./src/engine/overlay/*.ts",
+    "./engine/overlay/prosemirror/*": "./src/engine/overlay/prosemirror/index.ts",
+    "./styles": "./src/styles/index.ts",
+    "./styles/*": "./src/styles/*.ts"
   },
   "dependencies": {
+    "@onlook/analytics": "*",
     "@onlook/constants": "*",
-    "@onlook/models": "*"
+    "@onlook/models": "*",
+    "@onlook/services": "*",
+    "@onlook/ui": "*",
+    "@onlook/utility": "*",
+    "js-string-escape": "^1.0.1",
+    "lodash.debounce": "^4.0.8",
+    "mobx": "^6.12.4",
+    "prosemirror-commands": "^1.6.0",
+    "prosemirror-history": "^1.4.1",
+    "prosemirror-keymap": "^1.2.2",
+    "prosemirror-model": "^1.22.3",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-view": "^1.34.2",
+    "tailwind-merge": "^2.1.1"
   },
   "devDependencies": {
     "@onlook/typescript": "*",
+    "@types/lodash": "^4.17.7",
+    "ai": "^3.1.0",
+    "electron": "^32.1.0",
+    "react": "^18.3.1",
     "typescript": "^5.5.4"
   }
 }

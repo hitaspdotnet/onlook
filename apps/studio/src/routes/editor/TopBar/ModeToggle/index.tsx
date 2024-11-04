@@ -6,7 +6,7 @@ import { EditorMode } from '@onlook/models/editor';
 import { motion } from 'framer-motion';
 import { observer } from 'mobx-react-lite';
 import { useEffect, useState } from 'react';
-import { capitalizeFirstLetter } from '@onlook/editor/helpers';
+import { capitalizeFirstLetter } from '@onlook/utility/string';
 import { Hotkey } from '/common/hotkeys';
 
 const ModeToggle = observer(() => {

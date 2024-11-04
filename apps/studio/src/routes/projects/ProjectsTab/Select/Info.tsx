@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { observer } from 'mobx-react-lite';
 import EditAppButton from './EditAppButton';
 import ProjectSettingsButton from './ProjectSettingsButton';
-import { timeSince } from '@onlook/editor/helpers';
+import { timeSince } from '@onlook/utility/time';
 import type { Project } from '@onlook/models/projects';
 
 const ProjectInfo = observer(({ project, direction }: { project: Project; direction: number }) => {

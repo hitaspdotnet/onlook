@@ -26,13 +26,8 @@
     ".": "./src/index.ts",
     "./*": "./src/*.ts"
   },
-  "dependencies": {
-    "mixpanel": "^0.18.0",
-    "nanoid": "^5.0.7"
-  },
   "devDependencies": {
     "@onlook/typescript": "*",
-    "electron": "32.1.0",
     "typescript": "^5.5.4"
   }
 }

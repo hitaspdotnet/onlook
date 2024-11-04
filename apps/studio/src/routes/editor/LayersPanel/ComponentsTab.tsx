@@ -3,7 +3,7 @@ import { Button } from '@onlook/ui/button';
 import { observer } from 'mobx-react-lite';
 import { useCallback } from 'react';
 import { MainChannels } from '@onlook/constants';
-import type { ReactComponentDescriptor } from '/electron/main/code/components';
+import type { ComponentDescriptor } from '@onlook/types/adapters';
 
 function ScanComponentsButton() {
     const editorEngine = useEditorEngine();
@@ -20,7 +20,7 @@ function ScanComponentsButton() {
         const components = (await window.api.invoke(
             MainChannels.GET_COMPONENTS,
             path,
-        )) as ReactComponentDescriptor[];
+        )) as ComponentDescriptor[];
         editorEngine.projectInfo.components = components;
     }, [editorEngine]);
 
@@ -31,7 +31,7 @@ function ScanComponentsButton() {
     );
 }
 
-const ComponentsTab = observer(({ components }: { components: ReactComponentDescriptor[] }) => {
+const ComponentsTab = observer(({ components }: { components: ComponentDescriptor[] }) => {
     return (
         <div className="w-full">
             {components.length === 0 ? (

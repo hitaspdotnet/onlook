@@ -9,7 +9,7 @@ import type { CodeDiff } from '@onlook/models/code';
 import { MainChannels } from '@onlook/constants';
 import type { CoreMessage, DeepPartial } from 'ai';
 import { makeAutoObservable, reaction } from 'mobx';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import type { EditorEngine } from '..';
 import { AssistantChatMessageImpl } from './message/assistant';
 import { UserChatMessageImpl } from './message/user';
@@ -68,7 +68,7 @@ export class ChatManager {
         const messageParams = this.getCoreMessages();
         let res: StreamResponse | null = null;
 
-        const requestId = nanoid();
+        const requestId = ulid();
         res = await window.api.invoke(MainChannels.SEND_CHAT_MESSAGES_STREAM, {
             messages: messageParams,
             requestId,

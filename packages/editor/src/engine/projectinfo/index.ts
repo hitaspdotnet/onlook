@@ -1,8 +1,8 @@
 import { makeAutoObservable } from 'mobx';
-import type { ReactComponentDescriptor } from '/electron/main/code/components';
+import type { ComponentDescriptor } from '@onlook/types/adapters';
 
 export class ProjectInfoManager {
-    private projectComponents: ReactComponentDescriptor[];
+    private projectComponents: ComponentDescriptor[];
     constructor() {
         makeAutoObservable(this);
         this.projectComponents = [];
@@ -12,7 +12,7 @@ export class ProjectInfoManager {
         return this.projectComponents;
     }
 
-    set components(newComponents: ReactComponentDescriptor[]) {
+    set components(newComponents: ComponentDescriptor[]) {
         this.projectComponents = newComponents;
     }
 }

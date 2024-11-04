@@ -1,7 +1,7 @@
 import { colors } from '@onlook/ui/tokens';
 
 import { EditorAttributes } from '@onlook/constants';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 
 export interface RectDimensions {
     width: number;
@@ -121,7 +121,7 @@ export class ClickRect extends RectImpl {
     createStripePattern(color = '#FF0E48') {
         // Define a larger pattern for spaced-out stripes
         const pattern = document.createElementNS(this.svgNamespace, 'pattern');
-        const patternId = 'pattern-' + nanoid();
+        const patternId = 'pattern-' + ulid();
         pattern.setAttribute('id', patternId);
         pattern.setAttribute('patternUnits', 'userSpaceOnUse');
         pattern.setAttribute('width', '20'); // Increased pattern width for spacing
@@ -187,7 +187,7 @@ export class ClickRect extends RectImpl {
 
         // Create a mask element
         const mask = document.createElementNS(this.svgNamespace, 'mask');
-        const maskId = 'mask-' + nanoid(); // Unique ID for the mask
+        const maskId = 'mask-' + ulid(); // Unique ID for the mask
         mask.setAttribute('id', maskId);
 
         // Create a white rectangle for the mask that matches the element size
@@ -247,7 +247,7 @@ export class ClickRect extends RectImpl {
 
         // // Create a mask element
         const mask = document.createElementNS(this.svgNamespace, 'mask');
-        const maskId = 'mask-' + nanoid(); // Unique ID for the mask
+        const maskId = 'mask-' + ulid(); // Unique ID for the mask
         mask.setAttribute('id', maskId);
 
         // // Create a white rectangle for the mask that matches the element size

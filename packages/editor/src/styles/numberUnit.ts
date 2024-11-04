@@ -1,5 +1,5 @@
 import { toast } from '@onlook/ui/use-toast';
-import type { SingleStyle } from '@/lib/editor/styles/models';
+import type { SingleStyle } from './models';
 
 export function stringToParsedValue(
     val: string,

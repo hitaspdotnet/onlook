@@ -9,7 +9,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '@onlook/ui/popover';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@onlook/ui/tooltip';
 import { cn } from '@onlook/ui/utils';
 import clsx from 'clsx';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import { useEffect, useState } from 'react';
 
 interface BrowserControlsProps {
@@ -154,7 +154,7 @@ function BrowserControls({
     function duplicateWindow(linked: boolean = false) {
         const currentFrame = settings;
         const newFrame: FrameSettings = {
-            id: nanoid(),
+            id: ulid(),
             url: currentFrame.url,
             dimension: {
                 width: currentFrame.dimension.width,

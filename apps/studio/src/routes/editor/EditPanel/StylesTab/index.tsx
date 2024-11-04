@@ -1,14 +1,14 @@
 import { useEditorEngine } from '@/components/Context';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@onlook/ui/accordion';
-import type { CompoundStyleImpl } from '@/lib/editor/styles';
-import { LayoutGroup, PositionGroup, StyleGroup, TextGroup } from '@/lib/editor/styles/group';
+import type { CompoundStyleImpl } from '@onlook/editor/styles';
+import { LayoutGroup, PositionGroup, StyleGroup, TextGroup } from '@onlook/editor/styles/group';
 import {
     type BaseStyle,
     CompoundStyleKey,
     type SingleStyle,
     StyleGroupKey,
     StyleType,
-} from '@/lib/editor/styles/models';
+} from '@onlook/editor/styles/models';
 import { observer } from 'mobx-react-lite';
 import BorderInput from './compound/BorderInput';
 import DisplayInput from './compound/DisplayInput';

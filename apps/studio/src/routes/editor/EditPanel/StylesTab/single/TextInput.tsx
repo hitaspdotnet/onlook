@@ -1,12 +1,12 @@
 import { useEditorEngine } from '@/components/Context';
 import { toast } from '@onlook/ui/use-toast';
-import type { SingleStyle } from '@/lib/editor/styles/models';
+import type { SingleStyle } from '@onlook/editor/styles/models';
 import {
     getDefaultUnit,
     handleNumberInputKeyDown,
     parsedValueToString,
     stringToParsedValue,
-} from '@/lib/editor/styles/numberUnit';
+} from '@onlook/editor/styles/numberUnit';
 import { observer } from 'mobx-react-lite';
 import type React from 'react';
 import { useEffect, useState } from 'react';

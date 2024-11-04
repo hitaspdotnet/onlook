@@ -1,5 +1,5 @@
 import { useRouteManager, useUpdateManager } from '@/components/Context';
-import { Route } from '@/lib/routes';
+import { Route } from '@onlook/services/routes';
 import { cn } from '@onlook/ui/utils';
 import { observer } from 'mobx-react-lite';
 import { Button } from '@onlook/ui/button';

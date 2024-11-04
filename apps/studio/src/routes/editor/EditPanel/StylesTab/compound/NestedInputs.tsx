@@ -1,7 +1,7 @@
 import { useEditorEngine } from '@/components/Context';
 import { Icons } from '@onlook/ui/icons';
 import { ToggleGroup, ToggleGroupItem } from '@onlook/ui/toggle-group';
-import type { CompoundStyleImpl } from '@/lib/editor/styles';
+import type { CompoundStyleImpl } from '@onlook/editor/styles';
 import { motion } from 'framer-motion';
 import { observer } from 'mobx-react-lite';
 import { useEffect, useState } from 'react';

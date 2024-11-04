@@ -1,6 +1,6 @@
 import { ipcMain } from 'electron';
 import { mainWindow } from '..';
-import analytics from '../analytics';
+import analytics from '@onlook/analytics';
 import { PersistentStorage } from '../storage';
 import { MainChannels } from '@onlook/constants';
 

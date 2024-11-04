@@ -1,6 +1,17 @@
 import { DOM_IGNORE_TAGS, EditorAttributes } from '@onlook/constants';
-import { finder } from '../selector';
-import { getOrAssignUuid } from '/electron/preload/webview/elements/helpers';
+import { finder } from '@onlook/utility/selector';
+import { ulid } from '@onlook/utility/ulid';
+
+export function getOrAssignUuid(el: HTMLElement): string {
+    let id = el.getAttribute(EditorAttributes.DATA_ONLOOK_UNIQUE_ID);
+    if (id) {
+        return id;
+    }
+
+    id = ulid();
+    el.setAttribute(EditorAttributes.DATA_ONLOOK_UNIQUE_ID, id);
+    return id;
+}
 
 export function escapeSelector(selector: string) {
     return CSS.escape(selector);
@@ -36,10 +47,6 @@ export const getOnlookUniqueSelector = (el: HTMLElement): string => {
     return `[${EditorAttributes.DATA_ONLOOK_UNIQUE_ID}="${getOrAssignUuid(el)}"]`;
 };
 
-export function capitalizeFirstLetter(string: string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 export function isValidHtmlElement(element: Element): boolean {
     return (
         element &&
@@ -60,36 +67,4 @@ export function isOnlookInDoc(doc: Document): boolean {
         null,
     ).booleanValue;
     return attributeExists;
-}
-
-export function timeSince(date: Date): string {
-    if (!(date instanceof Date) || isNaN(date.getTime())) {
-        console.error('Invalid date provided');
-        return 'Invalid date';
-    }
-
-    const now = new Date();
-    const seconds = Math.floor((now.getTime() - date.getTime()) / 1000);
-    let interval = seconds / 31536000;
-
-    if (interval > 1) {
-        return Math.floor(interval) + 'y';
-    }
-    interval = seconds / 2592000;
-    if (interval > 1) {
-        return Math.floor(interval) + 'm';
-    }
-    interval = seconds / 86400;
-    if (interval > 1) {
-        return Math.floor(interval) + 'd';
-    }
-    interval = seconds / 3600;
-    if (interval > 1) {
-        return Math.floor(interval) + 'h';
-    }
-    interval = seconds / 60;
-    if (interval > 1) {
-        return Math.floor(interval) + 'm';
-    }
-    return Math.floor(seconds) + 's';
 }

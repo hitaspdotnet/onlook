@@ -1,6 +1,6 @@
 import type { User } from '@supabase/supabase-js';
 import { mainWindow } from '..';
-import analytics from '../analytics';
+import analytics from '@onlook/analytics';
 import { PersistentStorage } from '../storage';
 import { APP_SCHEMA, MainChannels } from '@onlook/constants';
 import type { AuthTokens, UserMetadata } from '@onlook/models/settings';

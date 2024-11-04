@@ -1,4 +1,4 @@
-import type { ProjectsManager } from '@/lib/projects';
+import type { ProjectsManager } from '@onlook/services/projects';
 import { DefaultSettings } from '@onlook/constants';
 import type {
     FrameSettings,
@@ -9,7 +9,7 @@ import type {
 } from '@onlook/models/projects';
 import { debounce } from 'lodash';
 import { makeAutoObservable, reaction } from 'mobx';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 
 export class CanvasManager {
     private zoomScale: number = DefaultSettings.SCALE;
@@ -116,7 +116,7 @@ export class CanvasManager {
 
     getDefaultFrame(defaults: Partial<FrameSettings>): FrameSettings {
         return {
-            id: defaults.id || nanoid(),
+            id: defaults.id || ulid(),
             url: defaults.url || DefaultSettings.URL,
             position: defaults.position || DefaultSettings.FRAME_POSITION,
             dimension: defaults.dimension || DefaultSettings.FRAME_DIMENSION,

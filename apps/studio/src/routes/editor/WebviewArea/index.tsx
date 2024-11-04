@@ -1,5 +1,5 @@
 import { useEditorEngine } from '@/components/Context';
-import { WebviewMessageBridge } from '@/lib/editor/messageBridge';
+import { WebviewMessageBridge } from '@onlook/editor/messageBridge';
 import { observer } from 'mobx-react-lite';
 import Frame from './Frame';
 import Overlay from './Overlay';

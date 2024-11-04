@@ -1,5 +1,5 @@
 import { useEditorEngine } from '@/components/Context';
-import { TAG_INFO } from '@/lib/editor/styles/tag';
+import { TAG_INFO } from '@onlook/editor/styles/tag';
 import { motion } from 'framer-motion';
 import { observer } from 'mobx-react-lite';
 import { useEffect, useState } from 'react';

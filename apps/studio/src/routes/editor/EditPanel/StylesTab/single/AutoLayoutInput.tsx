@@ -6,9 +6,9 @@ import {
     LayoutMode,
     LayoutProperty,
     parseModeAndValue,
-} from '@/lib/editor/styles/autolayout';
-import type { SingleStyle } from '@/lib/editor/styles/models';
-import { handleNumberInputKeyDown } from '@/lib/editor/styles/numberUnit';
+} from '@onlook/editor/styles/autolayout';
+import type { SingleStyle } from '@onlook/editor/styles/models';
+import { handleNumberInputKeyDown } from '@onlook/editor/styles/numberUnit';
 import { observer } from 'mobx-react-lite';
 import { type ChangeEvent, useEffect, useState } from 'react';
 

@@ -1,7 +1,7 @@
 import type { ChatMessageContext, UserContentBlock } from '@onlook/models/chat';
 import { ChatMessageRole, ChatMessageType, type UserChatMessage } from '@onlook/models/chat';
 import type { CoreUserMessage } from 'ai';
-import { nanoid } from 'nanoid';
+import { ulid } from '@onlook/utility/ulid';
 import { getFormattedUserPrompt, getStrippedContext } from '../prompt';
 
 export class UserChatMessageImpl implements UserChatMessage {
@@ -12,7 +12,7 @@ export class UserChatMessageImpl implements UserChatMessage {
     context: ChatMessageContext[] = [];
 
     constructor(content: string, context: ChatMessageContext[] = []) {
-        this.id = nanoid();
+        this.id = ulid();
         this.content = [{ type: 'text', text: content }];
         this.context = context;
     }

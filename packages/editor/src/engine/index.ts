@@ -1,5 +1,5 @@
 import { EditorMode } from '@onlook/models/editor';
-import type { ProjectsManager } from '@/lib/projects';
+import type { ProjectsManager } from '@onlook/services/projects';
 import type { NativeImage } from 'electron';
 import { makeAutoObservable } from 'mobx';
 import { ActionManager } from './action';

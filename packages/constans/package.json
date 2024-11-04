@@ -1,6 +1,6 @@
 {
-  "name": "@onlook/constans",
-  "description": "Onlook constans",
+  "name": "@onlook/constants",
+  "description": "Onlook constants",
   "version": "0.0.0",
   "repository": {
     "type": "git",

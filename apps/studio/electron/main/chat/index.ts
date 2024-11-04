@@ -1,7 +1,7 @@
 import { createAnthropic } from '@ai-sdk/anthropic';
 import { createOpenAI } from '@ai-sdk/openai';
 import { StreamReponseObject } from '@onlook/models/chat';
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import { type CoreMessage, type DeepPartial, type LanguageModelV1, streamText } from 'ai';
 import { z } from 'zod';
 import { mainWindow } from '..';

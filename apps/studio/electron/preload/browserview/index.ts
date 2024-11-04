@@ -1,5 +1,5 @@
 import { type IpcRendererEvent, contextBridge, ipcRenderer } from 'electron';
-import type { MainChannels } from '@onlook/models/constants';
+import type { MainChannels } from '@onlook/constants';
 
 declare global {
     interface Window {

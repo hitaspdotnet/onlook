@@ -1,6 +1,6 @@
 import { useEditorEngine } from '@/components/Context';
 import { SIZE_PRESETS, type SizePreset } from '@/lib/sizePresets';
-import { Links } from '@onlook/models/constants';
+import { Links } from '@onlook/constants';
 import type { FrameSettings } from '@onlook/models/projects';
 import { Button } from '@onlook/ui/button';
 import { Icons } from '@onlook/ui/icons';

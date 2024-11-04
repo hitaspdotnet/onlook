@@ -7,7 +7,7 @@ import type {
     ActionTarget,
     InsertElementAction,
 } from '@onlook/models/actions';
-import { EditorAttributes } from '@onlook/models/constants';
+import { EditorAttributes } from '@onlook/constants';
 import type { DropElementProperties, ElementPosition } from '@onlook/models/element';
 import { nanoid } from 'nanoid';
 import type React from 'react';

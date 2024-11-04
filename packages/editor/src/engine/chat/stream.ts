@@ -1,5 +1,5 @@
 import type { StreamResponse } from '@onlook/models/chat';
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import type { DeepPartial } from 'ai';
 import { makeAutoObservable } from 'mobx';
 

@@ -15,7 +15,7 @@ import type { SetupStage, VerifyStage } from '@onlook/foundation';
 import { cn } from '@onlook/ui/utils';
 import { useEffect, useState } from 'react';
 import type { StepComponent } from '../withStepProps';
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import { Icons } from '@onlook/ui/icons';
 
 enum StepState {

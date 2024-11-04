@@ -1,7 +1,7 @@
 import type { WebviewTag } from 'electron';
 import { nanoid } from 'nanoid';
 import type { EditorEngine } from '..';
-import { EditorAttributes } from '@onlook/models/constants';
+import { EditorAttributes } from '@onlook/constants';
 import { escapeSelector } from '/common/helpers';
 import { InsertPos } from '@onlook/models/editor';
 import type {

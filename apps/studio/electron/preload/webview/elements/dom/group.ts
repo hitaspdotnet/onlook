@@ -1,6 +1,6 @@
 import { getDomElement } from '../helpers';
 import { createElement } from './insert';
-import { EditorAttributes } from '@onlook/models/constants';
+import { EditorAttributes } from '@onlook/constants';
 import { getUniqueSelector } from '/common/helpers';
 import type {
     ActionElement,

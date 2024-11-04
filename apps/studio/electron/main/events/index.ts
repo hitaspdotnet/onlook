@@ -6,7 +6,7 @@ import { listenForAuthMessages } from './auth';
 import { listenForCodeMessages } from './code';
 import { listenForCreateMessages } from './create';
 import { listenForStorageMessages } from './storage';
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import { WindowCommand } from '@onlook/models/projects';
 import { listenForChatMessages } from './chat';
 

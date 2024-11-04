@@ -3,7 +3,7 @@ import { EditorMode } from '@onlook/models/editor';
 import type { ReactNode } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import DeleteKey from './Delete';
-import { DefaultSettings } from '@onlook/models/constants';
+import { DefaultSettings } from '@onlook/constants';
 import { Hotkey } from '/common/hotkeys';
 
 interface HotkeysAreaProps {

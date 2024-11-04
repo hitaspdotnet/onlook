@@ -1,5 +1,5 @@
 import { compressSync, decompressSync, strFromU8, strToU8 } from 'fflate';
-import { EditorAttributes } from '@onlook/models/constants';
+import { EditorAttributes } from '@onlook/constants';
 import type { TemplateNode } from '@onlook/models/element';
 
 export function getTemplateNode(element: Element): TemplateNode | undefined {

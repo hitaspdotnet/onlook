@@ -1,6 +1,6 @@
 import { ipcRenderer } from 'electron';
 import { getOrAssignUuid } from './elements/helpers';
-import { WebviewChannels } from '@onlook/models/constants';
+import { WebviewChannels } from '@onlook/constants';
 import { getUniqueSelector, isValidHtmlElement } from '/common/helpers';
 import type { LayerNode } from '@onlook/models/element';
 

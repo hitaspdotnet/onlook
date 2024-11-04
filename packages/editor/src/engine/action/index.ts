@@ -1,6 +1,6 @@
 import { sendAnalytics } from '@/lib/utils';
 import type { EditorEngine } from '..';
-import { WebviewChannels } from '@onlook/models/constants';
+import { WebviewChannels } from '@onlook/constants';
 import { assertNever } from '@onlook/utility/assert';
 import type {
     Action,

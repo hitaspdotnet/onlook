@@ -1,4 +1,4 @@
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import { ipcRenderer } from 'electron';
 
 export function sendAnalytics(event: string, data?: Record<string, any>) {

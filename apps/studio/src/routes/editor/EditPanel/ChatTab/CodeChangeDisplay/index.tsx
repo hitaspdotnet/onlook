@@ -2,7 +2,7 @@ import { useEditorEngine } from '@/components/Context';
 import { getTruncatedFileName } from '@/lib/utils';
 import type { CodeChangeBlock } from '@onlook/models/chat';
 import type { CodeDiff } from '@onlook/models/code';
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import { Button } from '@onlook/ui/button';
 import { Icons } from '@onlook/ui/icons';
 import { toast } from '@onlook/ui/use-toast';

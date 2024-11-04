@@ -1,5 +1,5 @@
 import type { ProjectsManager } from '@/lib/projects';
-import { DefaultSettings } from '@onlook/models/constants';
+import { DefaultSettings } from '@onlook/constants';
 import type {
     FrameSettings,
     Project,

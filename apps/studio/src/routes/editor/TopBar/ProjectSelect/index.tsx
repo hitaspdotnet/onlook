@@ -1,6 +1,6 @@
 import { useEditorEngine, useProjectsManager } from '@/components/Context';
 import { getRunProjectCommand } from '@/lib/utils';
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import { Button } from '@onlook/ui/button';
 import {
     DropdownMenu,

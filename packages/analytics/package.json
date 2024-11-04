@@ -27,6 +27,7 @@
     "./*": "./src/*.ts"
   },
   "dependencies": {
+    "@onlook/constants": "*",
     "mixpanel": "^0.18.0",
     "nanoid": "^5.0.7"
   },

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@onlook/ui/button';
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import { WindowCommand } from '@onlook/models/projects';
 import { Icons } from '@onlook/ui/icons';
 

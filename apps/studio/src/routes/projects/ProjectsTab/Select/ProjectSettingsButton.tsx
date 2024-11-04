@@ -1,7 +1,7 @@
 import { useProjectsManager } from '@/components/Context';
 import { getRunProjectCommand } from '@/lib/utils';
 import { getRandomPlaceholder } from '@/routes/projects/helpers';
-import { MainChannels } from '@onlook/models/constants';
+import { MainChannels } from '@onlook/constants';
 import type { Project } from '@onlook/models/projects';
 import {
     AlertDialog,

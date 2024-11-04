@@ -33,10 +33,12 @@
         "./*": "./src/*.ts"
     },
     "dependencies": {
+        "@onlook/models": "*",
         "any-base": "^1.1.0",
         "buffer": "^6.0.3",
         "color-namer": "^1.4.0",
         "css-color-names": "^1.0.1",
+        "fflate": "^0.8.2",
         "mobx": "^6.12.4",
         "prettier": "^3.3.2",
         "parse-css-color": "^0.2.1",

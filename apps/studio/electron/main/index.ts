@@ -4,7 +4,7 @@ import { createRequire } from 'node:module';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { sendAnalytics } from './analytics';
+import { sendAnalytics } from '@onlook/analytics/electron';
 import { handleAuthCallback } from './auth';
 import { listenForIpcMessages } from './events';
 import { updater } from './update';

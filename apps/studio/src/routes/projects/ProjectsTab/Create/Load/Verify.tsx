@@ -9,7 +9,7 @@ import {
 } from '@onlook/ui/alert-dialog';
 import { Button } from '@onlook/ui/button';
 import { CardDescription, CardTitle } from '@onlook/ui/card';
-import { sendAnalytics } from '@/lib/utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import { CreateMethod } from '@/routes/projects/helpers';
 import type { SetupStage, VerifyStage } from '@onlook/foundation';
 import { cn } from '@onlook/ui/utils';

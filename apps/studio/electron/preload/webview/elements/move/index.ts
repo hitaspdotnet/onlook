@@ -1,5 +1,5 @@
 import { getDomElement } from '../helpers';
-import { isValidHtmlElement } from '/common/helpers';
+import { isValidHtmlElement } from '@onlook/editor/helpers';
 import type { DomElement } from '@onlook/models/element';
 
 export function moveElement(selector: string, newIndex: number): DomElement | undefined {

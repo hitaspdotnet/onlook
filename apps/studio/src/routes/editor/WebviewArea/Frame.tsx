@@ -14,7 +14,7 @@ import { useEffect, useRef, useState, type MouseEvent } from 'react';
 import BrowserControls from './BrowserControl';
 import GestureScreen from './GestureScreen';
 import ResizeHandles from './ResizeHandles';
-import { isOnlookInDoc } from '/common/helpers';
+import { isOnlookInDoc } from '@onlook/editor/helpers';
 
 const Frame = observer(
     ({

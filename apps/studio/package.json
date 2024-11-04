@@ -46,6 +46,7 @@
         "@onlook/models": "*",
         "@onlook/supabase": "*",
         "@onlook/ui": "*",
+        "@onlook/analytics": "*",
         "@onlook/utility": "*",
         "@onlook/constants": "*",
         "@shikijs/monaco": "^1.22.0",

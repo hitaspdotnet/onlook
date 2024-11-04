@@ -1,7 +1,7 @@
 import { makeAutoObservable } from 'mobx';
 import { TemplateNodeMap } from './map';
 import { EditorAttributes, MainChannels } from '@onlook/constants';
-import { getUniqueSelector, isOnlookInDoc } from '/common/helpers';
+import { getUniqueSelector, isOnlookInDoc } from '../../helpers';
 import { getTemplateNode } from '@onlook/utility/template';
 import type { LayerNode } from '@onlook/models/element';
 import type { TemplateNode } from '@onlook/models/element';

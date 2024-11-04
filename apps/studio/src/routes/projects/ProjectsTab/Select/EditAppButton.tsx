@@ -1,6 +1,6 @@
 import { useProjectsManager } from '@/components/Context';
 import { Button } from '@onlook/ui/button';
-import { sendAnalytics } from '@/lib/utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import { motion } from 'framer-motion';
 import type { ComponentProps } from 'react';
 import type { Project } from '@onlook/models/projects';

@@ -1,7 +1,7 @@
 import { ulid } from '@onlook/utility/ulid';
 import { getStyles } from './style';
 import { EditorAttributes } from '@onlook/constants';
-import { getUniqueSelector } from '/common/helpers';
+import { getUniqueSelector } from '@onlook/editor/helpers';
 import { InsertPos } from '@onlook/models/editor';
 import type { ActionElementLocation } from '@onlook/models/actions';
 import type { DomElement, ParentDomElement } from '@onlook/models/element';

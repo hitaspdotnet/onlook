@@ -1,7 +1,7 @@
 import { MeasurementImpl } from './measurement';
 import { ClickRect, HoverRect, InsertRect } from './rect';
 import { EditTextInput } from './textEdit';
-import { querySelectorCommand } from '/common/helpers';
+import { querySelectorCommand } from '../../helpers';
 
 export class OverlayManager {
     overlayContainer: HTMLElement | undefined;

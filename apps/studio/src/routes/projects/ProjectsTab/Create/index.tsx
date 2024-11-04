@@ -2,7 +2,7 @@ import backgroundImageDark from '@/assets/dunes-create-dark.png';
 import backgroundImageLight from '@/assets/dunes-create-light.png';
 import { useProjectsManager } from '@/components/Context';
 import { MotionCard, MotionCardFooter } from '@onlook/ui/motion-card';
-import { sendAnalytics } from '@/lib/utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import { CreateMethod, getStepName } from '@/routes/projects/helpers';
 import { AnimatePresence, motion, MotionConfig } from 'framer-motion';
 import { useEffect, useState } from 'react';

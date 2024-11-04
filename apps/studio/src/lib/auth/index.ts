@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx';
-import { sendAnalytics } from '../utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import { APP_SCHEMA, MainChannels } from '@onlook/constants';
 import type { UserMetadata } from '@onlook/models/settings';
 import supabase from '@onlook/supabase/clients';

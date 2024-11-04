@@ -7,7 +7,7 @@ import { observer } from 'mobx-react-lite';
 import { useState } from 'react';
 import ComponentsTab from './ComponentsTab';
 import LayersTab from './LayersTab';
-import { capitalizeFirstLetter } from '/common/helpers';
+import { capitalizeFirstLetter } from '@onlook/editor/helpers';
 import { Icons } from '@onlook/ui/icons';
 
 const COMPONENT_DISCOVERY_ENABLED = false;

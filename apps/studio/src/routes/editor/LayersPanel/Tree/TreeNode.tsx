@@ -9,7 +9,7 @@ import { useRef } from 'react';
 import type { NodeApi } from 'react-arborist';
 import { twMerge } from 'tailwind-merge';
 import NodeIcon from './NodeIcon';
-import { escapeSelector } from '/common/helpers';
+import { escapeSelector } from '@onlook/editor/helpers';
 import { MouseAction } from '@onlook/models/editor';
 import type { DomElement } from '@onlook/models/element';
 import type { LayerNode } from '@onlook/models/element';

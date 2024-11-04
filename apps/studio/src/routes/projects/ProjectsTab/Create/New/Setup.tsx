@@ -1,7 +1,7 @@
 import { Button } from '@onlook/ui/button';
 import { CardDescription, CardTitle } from '@onlook/ui/card';
 import { Progress } from '@onlook/ui/progress';
-import { sendAnalytics } from '@/lib/utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import { CreateMethod } from '@/routes/projects/helpers';
 import type { CreateStage } from '@onlook/foundation';
 import { AnimatePresence, motion, MotionConfig } from 'framer-motion';

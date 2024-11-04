@@ -1,4 +1,4 @@
-import { sendAnalytics } from '@/lib/utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import { makeAutoObservable } from 'mobx';
 import type { EditorEngine } from '..';
 import { getGroupElement, getUngroupElement } from './group';

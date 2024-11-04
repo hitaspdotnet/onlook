@@ -1,6 +1,6 @@
 import type React from 'react';
 import type { EditorEngine } from '..';
-import { escapeSelector } from '/common/helpers';
+import { escapeSelector } from '../../helpers';
 import { InsertPos } from '@onlook/models/editor';
 import type { MoveElementAction } from '@onlook/models/actions';
 import type { DomElement, ElementPosition } from '@onlook/models/element';

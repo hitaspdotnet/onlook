@@ -2,7 +2,7 @@ import { getOrAssignUuid, restoreElementStyle } from '../helpers';
 import { getDisplayDirection } from './helpers';
 import { createStub, getCurrentStubIndex, moveStub, removeStub } from './stub';
 import { EditorAttributes } from '@onlook/constants';
-import { getUniqueSelector, isValidHtmlElement } from '/common/helpers';
+import { getUniqueSelector, isValidHtmlElement } from '@onlook/editor/helpers';
 
 export function startDrag(selector: string): number {
     const el = document.querySelector(selector) as HTMLElement | null;

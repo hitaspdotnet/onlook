@@ -1,6 +1,6 @@
 import { useEditorEngine } from '@/components/Context';
 import { Textarea } from '@onlook/ui/textarea';
-import { sendAnalytics } from '@/lib/utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import { observer } from 'mobx-react-lite';
 import { useEffect, useRef, useState } from 'react';
 import { MainChannels } from '@onlook/constants';

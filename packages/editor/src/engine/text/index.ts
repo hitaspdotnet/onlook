@@ -1,7 +1,7 @@
 import type { WebviewTag } from 'electron';
 import jsStringEscape from 'js-string-escape';
 import type { EditorEngine } from '..';
-import { escapeSelector } from '/common/helpers';
+import { escapeSelector } from '../../helpers';
 import type { DomElement, TextDomElement } from '@onlook/models/element';
 
 export class TextEditingManager {

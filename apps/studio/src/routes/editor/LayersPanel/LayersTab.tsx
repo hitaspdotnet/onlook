@@ -6,7 +6,7 @@ import useResizeObserver from 'use-resize-observer';
 import RightClickMenu from '../RightClickMenu';
 import TreeNode from './Tree/TreeNode';
 import TreeRow from './Tree/TreeRow';
-import { escapeSelector } from '/common/helpers';
+import { escapeSelector } from '@onlook/editor/helpers';
 import type { LayerNode } from '@onlook/models/element';
 
 const LayersTab = observer(() => {

@@ -1,7 +1,7 @@
 import { ToggleGroup, ToggleGroupItem } from '@onlook/ui/toggle-group';
 import { motion } from 'framer-motion';
 import { ProjectTabs } from '../..';
-import { capitalizeFirstLetter } from '/common/helpers';
+import { capitalizeFirstLetter } from '@onlook/editor/helpers';
 
 const ModeToggle = ({
     currentTab,

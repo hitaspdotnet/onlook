@@ -2,7 +2,7 @@ import { makeAutoObservable } from 'mobx';
 import { nanoid } from 'nanoid';
 import type { EditorEngine } from '..';
 import { EditorAttributes, MainChannels } from '@onlook/constants';
-import { escapeSelector } from '/common/helpers';
+import { escapeSelector } from '../../helpers';
 import { InsertPos } from '@onlook/models/editor';
 import type {
     ActionElement,

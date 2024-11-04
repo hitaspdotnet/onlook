@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx';
-import { sendAnalytics } from '../utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 
 export enum Route {
     EDITOR = 'editor',

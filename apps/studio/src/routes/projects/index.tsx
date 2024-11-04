@@ -1,4 +1,4 @@
-import { sendAnalytics } from '@/lib/utils';
+import { sendAnalytics } from '@onlook/analytics/react';
 import type { CreateMethod } from '@/routes/projects/helpers';
 import { useState } from 'react';
 import ProjectsTab from './ProjectsTab';

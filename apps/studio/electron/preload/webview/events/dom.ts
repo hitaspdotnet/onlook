@@ -3,7 +3,7 @@ import { buildLayerTree } from '../dom';
 import { removeDuplicateInsertedElement } from '../elements/dom/insert';
 import { getOrAssignUuid } from '../elements/helpers';
 import { EditorAttributes, WebviewChannels } from '@onlook/constants';
-import { getUniqueSelector } from '/common/helpers';
+import { getUniqueSelector } from '@onlook/editor/helpers';
 import type { LayerNode } from '@onlook/models/element';
 
 export function listenForDomMutation() {

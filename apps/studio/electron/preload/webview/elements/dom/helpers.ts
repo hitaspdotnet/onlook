@@ -1,5 +1,5 @@
 import { getImmediateTextContent, getOrAssignUuid } from '../helpers';
-import { getUniqueSelector } from '/common/helpers';
+import { getUniqueSelector } from '@onlook/editor/helpers';
 import { InsertPos } from '@onlook/models/editor';
 import type { ActionElement, ActionElementLocation } from '@onlook/models/actions';
 

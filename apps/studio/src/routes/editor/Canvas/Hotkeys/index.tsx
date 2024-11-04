@@ -1,5 +1,5 @@
 import { useEditorEngine } from '@/components/Context';
-import { EditorMode } from '@/lib/models';
+import { EditorMode } from '@onlook/models/editor';
 import type { ReactNode } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import DeleteKey from './Delete';

@@ -2,7 +2,7 @@ import { useEditorEngine } from '@/components/Context';
 import { HotKeyLabel } from '@/components/ui/hotkeys-label';
 import { ToggleGroup, ToggleGroupItem } from '@onlook/ui/toggle-group';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@onlook/ui/tooltip';
-import { EditorMode } from '@/lib/models';
+import { EditorMode } from '@onlook/models/editor';
 import { motion } from 'framer-motion';
 import { observer } from 'mobx-react-lite';
 import { useEffect, useState } from 'react';

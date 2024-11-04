@@ -1,5 +1,5 @@
 import { useEditorEngine } from '@/components/Context';
-import { EditorMode } from '@/lib/models';
+import { EditorMode } from '@onlook/models/editor';
 import { cn } from '@onlook/ui/utils';
 import { observer } from 'mobx-react-lite';
 

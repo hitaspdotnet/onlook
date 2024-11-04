@@ -1,7 +1,7 @@
 import { useEditorEngine } from '@/components/Context';
 import { ToastAction } from '@onlook/ui/toast';
 import { useToast } from '@onlook/ui/use-toast';
-import { EditorMode } from '@/lib/models';
+import { EditorMode } from '@onlook/models/editor';
 import type { SizePreset } from '@/lib/sizePresets';
 import clsx from 'clsx';
 import { observer } from 'mobx-react-lite';

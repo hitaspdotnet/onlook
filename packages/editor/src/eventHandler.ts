@@ -1,5 +1,5 @@
 import { debounce } from 'lodash';
-import { EditorMode } from '../models';
+import { EditorMode } from '@onlook/models/editor';
 import type { EditorEngine } from './engine';
 import { WebviewChannels } from '@onlook/models/constants';
 import type { DomElement } from '@onlook/models/element';

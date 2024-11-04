@@ -1,7 +1,7 @@
 import { useEditorEngine } from '@/components/Context';
 import { Separator } from '@onlook/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@onlook/ui/tabs';
-import { EditorMode } from '@/lib/models';
+import { EditorMode } from '@onlook/models/editor';
 import { cn } from '@onlook/ui/utils';
 import { observer } from 'mobx-react-lite';
 import { useState } from 'react';

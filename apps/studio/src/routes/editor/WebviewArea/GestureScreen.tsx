@@ -1,5 +1,5 @@
 import { useEditorEngine } from '@/components/Context';
-import { EditorMode } from '@/lib/models';
+import { EditorMode } from '@onlook/models/editor';
 import { MouseAction } from '@onlook/models/editor';
 import type { DomElement, DropElementProperties, ElementPosition } from '@onlook/models/element';
 import { cn } from '@onlook/ui/utils';

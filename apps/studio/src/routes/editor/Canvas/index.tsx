@@ -1,5 +1,5 @@
 import { useEditorEngine } from '@/components/Context';
-import { EditorMode } from '@/lib/models';
+import { EditorMode } from '@onlook/models/editor';
 import { observer } from 'mobx-react-lite';
 import { type ReactNode, useEffect, useRef, useState } from 'react';
 import HotkeysArea from './Hotkeys';

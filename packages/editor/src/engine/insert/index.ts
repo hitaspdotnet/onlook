@@ -1,6 +1,6 @@
 import { colors } from '@onlook/ui/tokens';
 
-import { EditorMode } from '@/lib/models';
+import { EditorMode } from '@onlook/models/editor';
 import type {
     ActionElement,
     ActionElementLocation,
